@@ -1,0 +1,14 @@
+<canvas id="myCanvas" width="200" height="200"></canvas>
+
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  const x = 100;
+  const y = 100;
+  const radius = 50;
+  const color = "#ff0000";
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, 2 * Math.PI);
+  ctx.fill();
+</script>
