@@ -1,5 +1,6 @@
-export function templete(main, root) {
-  console.log(main.dataset.theme);
+export function templete() {
+  const main = document.querySelector("main");
+  const root = document.querySelector(":root");
 
   if (main.dataset.theme === "dark") {
     root.style.setProperty("--bg-color", "#f1f5f9");
