@@ -1,4 +1,7 @@
 import { templete } from "./funtionTemplete.js";
+import calculate from "./calculate.js";
+import copiador from "./copiarResultado.js";
+
 
 const main = document.querySelector("main");
 const root = document.querySelector(":root");
@@ -49,33 +52,19 @@ input.addEventListener("keydown", (ev) => {
     input.value = input.value.slice(0, -1);
   }
   if (ev.key === "Enter") {
-    calculate();
+    calculate(resultInput);
   }
 });
 
-document.getElementById("equal").addEventListener("click", calculate);
+document
+  .getElementById("equal")
+  .addEventListener("click", () => calculate(resultInput));
 
-function calculate() {
-  resultInput.value = "ERROR";
-  resultInput.classList.add("error");
-  const result = eval(input.value);
-  resultInput.classList.remove("error");
-  resultInput.value = result;
-  console.log(result);
-}
-
-document.getElementById("copyToClipboard").addEventListener("click", (ev) => {
-  const button = ev.currentTarget;
-  if (button.innerText === "Copy") {
-    button.innerText = "Copied!";
-    button.classList.add("success");
-    navigator.clipboard.writeText(resultInput.value);
-  } else {
-    button.innerText = "Copy";
-    button.classList.remove("success");
-  }
-});
-
+document
+  .getElementById("copyToClipboard")
+  .addEventListener("click", (event) => {
+    copiador(event, resultInput);
+  });
 document
   .getElementById("themeSwitcher")
   .addEventListener("click", () => templete(main, root));
