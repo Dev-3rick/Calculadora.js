@@ -2,6 +2,10 @@
 
 Este é um projeto de uma calculadora implementada em JavaScript. A calculadora possui uma interface interativa onde os usuários podem realizar operações matemáticas básicas. O projeto também inclui funcionalidades adicionais, como a capacidade de copiar o resultado para a área de transferência e alternar entre temas claro e escuro.
 
+## Acessar Online
+
+Você pode acessar a calculadora online através do GitHub Pages. [Clique aqui](https://dev-3rick.github.io/Calculadora.js/) para abrir a calculadora no seu navegador.
+
 ## Funcionalidades
 
 O projeto possui as seguintes funcionalidades:
@@ -15,7 +19,7 @@ O projeto possui as seguintes funcionalidades:
 
 ## Como executar o projeto
 
-Para executar o projeto, siga as etapas abaixo:
+Para executar o projeto localmente, siga as etapas abaixo:
 
 1. Clone o repositório para sua máquina local.
 2. Abra o arquivo `index.html` em um navegador da web compatível.
